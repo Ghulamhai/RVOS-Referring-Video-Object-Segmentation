@@ -17,7 +17,7 @@ Download or Stream: Once it's done, you can download the final video or stream i
 Ready to try it out? Here’s how to get it running in a few steps.
 
 Clone the project: 
-git clone https://github.com/its-rizz/RVOS-Referring-Video-Object-Segmentation-.git
+git clone https://github.com/Ghulamhai/RVOS-Referring-Video-Object-Segmentation.git
 cd RVOS-Referring-Video-Object-Segmentation-
 Set up a virtual environment (recommended)
 
