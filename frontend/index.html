@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Segmentation Tool</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Video Segmentation Tool</h1>
+            <p>Upload a video and segment objects with AI</p>
+        </header>
+        
+        <div class="upload-section">
+            <div class="upload-container" id="upload-container">
+                <div class="upload-icon">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                </div>
+                <h2>Upload Your Video</h2>
+                <p>Drag & drop your video file or click to browse</p>
+                <input type="file" id="file-input" accept="video/*" hidden>
+                <button class="browse-btn" id="browse-btn">Browse Files</button>
+            </div>
+            
+            <div class="prompt-container">
+                <h2>Enter Text Prompt</h2>
+                <p>Describe what you want to segment in the video</p>
+                <input type="text" id="text-prompt" placeholder="e.g., a man jumping, a cat, a car">
+                <button class="process-btn" id="process-btn" disabled>Process Video</button>
+            </div>
+        </div>
+        
+        <div class="progress-container" id="progress-container" style="display: none;">
+            <h2>Processing Video</h2>
+            <div class="progress-bar-container">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+            <p id="progress-status">Extracting frames...</p>
+        </div>
+        
+        <div class="result-container" id="result-container" style="display: none;">
+            <h2>Segmentation Complete!</h2>
+            <div class="video-player-container">
+                <video id="result-video" controls>
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-controls">
+                    <button id="download-btn" class="download-btn">
+                        <i class="fas fa-download"></i> Download Video
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>© 2025 Video Segmentation Tool | Powered by AI</p>
+    </footer>
+    
+    <script src="static/js/script.js"></script>
+</body>
+</html>
